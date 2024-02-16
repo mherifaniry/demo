@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="220.0" prefWidth="639.0" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mherifaniry.view.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox prefHeight="28.0" prefWidth="395.0">
+      <children>
+         <TextField fx:id="id_categorie" prefHeight="26.0" prefWidth="206.0" />
+          <Button onAction="#onHelloButtonClick" prefHeight="15.0" prefWidth="96.0" text="check" />
+      </children>
+   </HBox>
+   <ScrollPane prefHeight="200.0" prefWidth="200.0">
+     <content>
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+            <children>
+               <TableView fx:id="table_transactions" prefHeight="200.0" prefWidth="850.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-650.0">
+                 <columns>
+                   <TableColumn fx:id="id" prefWidth="75.0" text="Identités" />
+                   <TableColumn fx:id="dateDeTransaction" prefWidth="75.0" text="Dates" />
+                     <TableColumn fx:id="categorie" prefWidth="86.0" text="Catégories" />
+                     <TableColumn fx:id="personne" prefWidth="109.0" text="Résponsables" />
+                     <TableColumn fx:id="montant" prefWidth="96.0" text="Montants" />
+                     <TableColumn fx:id="description" prefWidth="118.0" text="Déscriptions" />
+                 </columns>
+               </TableView>
+            </children>
+         </AnchorPane>
+     </content>
+   </ScrollPane>
+
+</VBox>

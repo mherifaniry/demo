@@ -1,0 +1,20 @@
+.button{
+    -fx-background-color: #CCFF66;
+}
+
+.split-pane{
+    -fx-border-width: 0.5px;
+    -fx-border-color: white;
+}
+
+.split-pane-divider {
+    -fx-border-width: 1px; /* Adjust the border width for the divider */
+    -fx-border-color: red; /* Adjust the border color for the divider */
+    -fx-divider-position: 50%;
+    -fx-opacity: 0;
+}
+
+.grid-pane {
+    -fx-border-width: 0.5px;
+    -fx-border-color: white;
+}

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mherifaniry.view.PrincipalesView">
+   <children>
+      <BorderPane layoutX="202.0" layoutY="86.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="686.0" style="-fx-background-color: #5111cb;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label graphicTextGap="10.0" text="CASHFL" textFill="#fffbfb">
+                     <padding>
+                        <Insets left="7.0" />
+                     </padding>
+                     <font>
+                        <Font name="Saab" size="20.0" />
+                     </font>
+                  </Label>
+                  <SVGPath content="M 0.675781 14.539062 C 0.464844 14.527344 0.257812 14.621094 0.132812 14.796875 C -0.140625 15.203125 0.171875 15.613281 0.429688 15.914062 C 1.164062 16.765625 3.25 19.589844 3.644531 20.0625 C 3.761719 20.21875 3.949219 20.308594 4.140625 20.308594 C 4.335938 20.308594 4.519531 20.21875 4.640625 20.0625 C 5.027344 19.605469 7.066406 16.917969 7.847656 16.054688 C 8.121094 15.730469 8.527344 15.308594 8.238281 14.863281 C 8.113281 14.6875 7.914062 14.589844 7.699219 14.589844 L 5.734375 14.574219 C 6.988281 8.382812 12.042969 3.746094 18.203125 3.144531 C 24.359375 2.542969 30.183594 6.113281 32.566406 11.953125 L 35.355469 10.765625 C 32.441406 3.546875 25.199219 -0.828125 17.605469 0.0546875 C 10.011719 0.933594 3.910156 6.851562 2.652344 14.558594 Z M 17.878906 10.078125 L 17.878906 8.390625 L 20.65625 8.390625 L 20.65625 10.042969 C 21.929688 10.109375 23.191406 10.292969 24.433594 10.578125 L 24.433594 13.601562 C 23.765625 13.554688 23.015625 13.511719 22.183594 13.480469 C 21.351562 13.445312 20.597656 13.429688 19.914062 13.429688 C 19.550781 13.425781 19.1875 13.453125 18.828125 13.507812 C 17.371094 13.746094 17.355469 15.703125 19.242188 15.703125 L 20.660156 15.703125 C 21.53125 15.671875 22.402344 15.851562 23.195312 16.226562 C 23.828125 16.535156 24.355469 17.023438 24.714844 17.636719 C 25.058594 18.253906 25.242188 18.957031 25.226562 19.667969 L 25.226562 20.316406 C 25.226562 21.554688 24.988281 22.503906 24.507812 23.160156 C 24.003906 23.835938 23.277344 24.300781 22.46875 24.480469 C 21.878906 24.65625 21.273438 24.765625 20.664062 24.804688 L 20.664062 26.636719 L 17.878906 26.636719 L 17.878906 24.792969 C 16.605469 24.738281 15.339844 24.554688 14.101562 24.253906 L 14.101562 21.230469 C 15.742188 21.363281 17.425781 21.410156 19.074219 21.410156 C 19.472656 21.414062 19.871094 21.382812 20.269531 21.304688 C 21.738281 21.003906 21.5 19.308594 20.09375 19.308594 L 18.941406 19.308594 C 17.261719 19.308594 15.988281 18.976562 15.117188 18.308594 C 14.25 17.640625 13.816406 16.519531 13.816406 14.953125 L 13.816406 14.304688 C 13.816406 12.867188 14.296875 11.785156 15.25 11.066406 C 16.015625 10.484375 16.929688 10.140625 17.878906 10.0625 Z M 36.453125 20.148438 C 35.269531 28.148438 28.871094 34.273438 20.984375 34.960938 C 13.09375 35.644531 5.777344 30.714844 3.285156 23.035156 L 6.140625 22.0625 C 8.175781 28.277344 14.050781 32.304688 20.449219 31.867188 C 26.847656 31.4375 32.152344 26.648438 33.367188 20.210938 L 31.308594 20.257812 C 31.097656 20.269531 30.898438 20.175781 30.769531 20.007812 C 30.453125 19.574219 30.863281 19.121094 31.125 18.808594 C 31.882812 17.917969 33.84375 15.167969 34.214844 14.695312 C 34.332031 14.539062 34.511719 14.445312 34.707031 14.4375 C 34.902344 14.4375 35.085938 14.523438 35.210938 14.675781 C 35.617188 15.140625 37.789062 17.898438 38.546875 18.730469 C 38.8125 19.015625 39.136719 19.417969 38.863281 19.832031 C 38.742188 20.011719 38.539062 20.117188 38.328125 20.109375 L 36.441406 20.148438 Z M 36.453125 20.148438 " fill="#f5f4f4">
+                     <HBox.margin>
+                        <Insets left="1.0" />
+                     </HBox.margin>
+                  </SVGPath>
+                  <Label graphicTextGap="10.0" layoutX="20.0" layoutY="15.0" text="W" textFill="#fffbfb">
+                     <padding>
+                        <Insets left="2.0" />
+                     </padding>
+                     <font>
+                        <Font name="Saab" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+         </top>
+         <left>
+            <VBox prefHeight="371.0" prefWidth="138.0" style="-fx-background-color: #703bd6;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="139.0" stylesheets="@css/Styling.css" text="Rapports" textFill="#fffdfd">
+                     <graphic>
+                        <SVGPath content="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5" fill="#f5f4f4" layoutX="18.0" layoutY="18.0" />
+                     </graphic>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="139.0" stylesheets="@css/Styling.css" text="Budgets" textFill="#fffdfd">
+                     <graphic>
+                        <SVGPath content="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5z" fill="#f5f4f4" layoutX="18.0" layoutY="18.0" />
+                     </graphic>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="139.0" stylesheets="@css/Styling.css" text="Transactions" textFill="#fffdfd">
+                     <graphic>
+                        <SVGPath content="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5m-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5" fill="#f5f4f4" layoutX="18.0" layoutY="18.0" />
+                     </graphic>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="52.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="138.0" stylesheets="@css/Styling.css" text="Planning" textFill="#fffdfd">
+                     <graphic>
+                        <SVGPath content="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" fill="#f5f4f4" layoutX="18.0" layoutY="18.0" />
+                     </graphic>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="94.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="139.0" stylesheets="@css/Styling.css" text="Paramètres" textFill="#fffdfd">
+                     <graphic>
+                        <SVGPath content="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0 M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z" fill="#f5f4f4" layoutX="18.0" layoutY="18.0" />
+                     </graphic>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane prefHeight="367.0" prefWidth="552.0">
+                     <center>
+                        <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+                          <tabs>
+                            <Tab text="Graphs">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              </content>
+                            </Tab>
+                            <Tab text="Tableau">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="334.0" prefWidth="296.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="548.0" style="-fx-background-color: #e6e6e6;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Label alignment="CENTER_RIGHT" text="Résumer des transactions">
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" stylesheets="@css/Styling.css" text="Revenus" textFill="#4d4949">
+                                                   <styleClass>
+                                                      <String fx:value="button-menu" />
+                                                      <String fx:value="button-menu" />
+                                                   </styleClass>
+                                                   <HBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </HBox.margin>
+                                                   <graphic>
+                                                      <SVGPath content="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" styleClass="svg-path" />
+                                                   </graphic>
+                                                </Button>
+                                                <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" stylesheets="@css/Styling.css" text="Dépenses" textFill="#4d4949">
+                                                   <styleClass>
+                                                      <String fx:value="button-menu" />
+                                                      <String fx:value="button-menu" />
+                                                   </styleClass>
+                                                   <HBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </HBox.margin>
+                                                   <graphic>
+                                                      <SVGPath content="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708z" styleClass="svg-path" />
+                                                   </graphic>
+                                                </Button>
+                                                <Button layoutX="302.0" layoutY="19.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" stylesheets="@css/Styling.css" text="Trier" textFill="#4d4949">
+                                                   <styleClass>
+                                                      <String fx:value="button-menu" />
+                                                      <String fx:value="button-menu" />
+                                                   </styleClass>
+                                                   <graphic>
+                                                      <SVGPath content="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z" styleClass="svg-path" />
+                                                   </graphic>
+                                                   <HBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                          <BorderPane layoutY="41.0" prefHeight="282.0" prefWidth="548.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="41.0">
+                                             <center>
+                                                <TableView  fx:id="table_transactions" prefHeight="200.0" prefWidth="200.0" stylesheets="@css/Styling.css" BorderPane.alignment="CENTER">
+                                                  <columns>
+                                                     <TableColumn fx:id="id" prefWidth="75.0" text="Identités" />
+                                                     <TableColumn fx:id="dateDeTransaction" prefWidth="75.0" text="Dates" />
+                                                     <TableColumn fx:id="categorie" prefWidth="86.0" text="Catégories" />
+                                                     <TableColumn fx:id="personne" prefWidth="109.0" text="Résponsables" />
+                                                     <TableColumn fx:id="montant" prefWidth="96.0" text="Montants" />
+                                                     <TableColumn fx:id="description" prefWidth="118.0" text="Déscriptions" />
+                                                  </columns>
+                                                   <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                   </columnResizePolicy>
+                                                </TableView>
+                                             </center>
+                                          </BorderPane>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </center>
+                  </BorderPane>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="561.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="561.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER_RIGHT" text="Copyrigth © mherifaniry 2024">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
