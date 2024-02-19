@@ -1,6 +1,6 @@
 package com.mherifaniry.view;
 
-public class BudgetsView implements View{
+public class PlanningsViews implements View{
     @Override
     public void initialLoad(){
 

@@ -82,6 +82,7 @@
                                     <TableColumn fx:id="personne" prefWidth="109.0" text="Résponsables" />
                                     <TableColumn fx:id="montant" prefWidth="96.0" text="Montants" />
                                     <TableColumn fx:id="description" prefWidth="118.0" text="Déscriptions" />
+                                    <TableColumn fx:id="types" prefWidth="118.0" text="Situations" />
                                  </columns>
                                  <columnResizePolicy>
                                     <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />

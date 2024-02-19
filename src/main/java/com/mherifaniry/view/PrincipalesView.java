@@ -9,6 +9,8 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class PrincipalesView {
 
@@ -16,46 +18,52 @@ public class PrincipalesView {
     @FXML
     private static BorderPane middleBP;
     @FXML
-    private static Button rapportsBtn, budgetsBtn, transactionsBtn, planningBtn, paramètresBtn;
-    private static  FXMLLoader fxmlLoader;
+    private static Button rapportsBtn, budgetsBtn, transactionsBtn, planningBtn, parametresBtn;
+    private static  FXMLLoader principaleFxmlLoader;
+
     private static  RapportsView rapportsView;
+    private static BudgetsView budgetsView;
+    private static TransactionsView transactionsView;
+    private static PlanningsViews planningsViews;
+    private static ParametresViews parametresViews;
     private static  Parent root;
+    private static Map<Button, Class<?>> listBtnPbLeft;
+
+    public static void putParametersBtn(String id, Button btn, String file, Class<?> hisClass)
+    {
+        btn = (Button) root.lookup(id); // get btn by id
+        btn.setUserData(file); // add default value to the btn
+        listBtnPbLeft.put(btn, hisClass);
+    }
 
     public static void setMiddleBP() throws IOException {
-        fxmlLoader = new FXMLLoader(PrincipalesView.class.getResource("principale.fxml"));
-        root = fxmlLoader.load();
+
+        principaleFxmlLoader = new FXMLLoader(PrincipalesView.class.getResource("principale.fxml"));
+        root = principaleFxmlLoader.load();
         middleBP = (BorderPane) root.lookup("#middleBP");
 
         //btn initialisation & event intialization
-        rapportsBtn = (Button) root.lookup("#rapportsBtn");
-        budgetsBtn = (Button) root.lookup("#budgetsBtn");
-        transactionsBtn = (Button) root.lookup("#transactionsBtn");
-        planningBtn = (Button) root.lookup("#planningBtn");
-        paramètresBtn = (Button) root.lookup("#paramètresBtn");
+        listBtnPbLeft = new HashMap<>();
+        putParametersBtn("#rapportsBtn",rapportsBtn, "rapports.fxml", RapportsView.class);
+        putParametersBtn("#budgetsBtn",budgetsBtn, "budgets.fxml", BudgetsView.class);
+        putParametersBtn("#transactionsBtn",transactionsBtn, "transactions.fxml", TransactionsView.class);
+        putParametersBtn("#planningBtn",planningBtn, "plannings.fxml", PlanningsViews.class);
+        putParametersBtn("#parametresBtn",parametresBtn, "parametres.fxml", ParametresViews.class);
 
-        // Event Btn "Rapports" on click
-        rapportsBtn.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                try {
-                    initializeRapportsContents(RapportsView.class, "rapports.fxml");
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
+        // adding event listenr to all btn
+        for(Button btn: listBtnPbLeft.keySet())
+        {
+            btn.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent actionEvent) {
+                    try {
+                        initializeRapportsContents((Class<?>) listBtnPbLeft.get(btn),(String) btn.getUserData());
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
                 }
-            }
-        });
-
-        // Event btn "Budgets" on click
-        budgetsBtn.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                try {
-                    initializeRapportsContents(BudgetsView.class, "budgets.fxml");
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
-            }
-        });
+            });
+        }
 
     }
 
@@ -63,8 +71,8 @@ public class PrincipalesView {
         return middleBP;
     }
 
-    public static   FXMLLoader getFxmlLoader() {
-        return fxmlLoader;
+    public static   FXMLLoader getPrincipaleFxmlLoader() {
+        return principaleFxmlLoader;
     }
 
     public static  RapportsView getRapportsView() {
@@ -78,14 +86,9 @@ public class PrincipalesView {
     public static void initializeRapportsContents(Class<?> theClass, String xmlfile) throws IOException{
         FXMLLoader theclassViewFxml = new FXMLLoader(theClass.getResource(xmlfile));
         getMiddleBP().setCenter(theclassViewFxml.load());
-        switch (theClass.getName())
-        {
-            case "com.mherifaniry.view.RapportsView":
-                rapportsView = theclassViewFxml.getController();
-                rapportsView.initialLoad();
-                System.out.print("passing here");
-                break;
-        }
+        View rapportsView = theclassViewFxml.getController();
+        rapportsView.initialLoad();
+
     }
 
 

@@ -13,7 +13,7 @@ import mherifaniry.entity.Transactions;
 
 import java.sql.Timestamp;
 
-public class RapportsView {
+public class RapportsView implements View{
     @FXML
     private TableView<Transactions> table_transactions;
     @FXML private TableColumn<Transactions, Long> id;
@@ -22,11 +22,13 @@ public class RapportsView {
     @FXML private TableColumn<Transactions, String> personne;
     @FXML private TableColumn<Transactions, Double> montant;
     @FXML private TableColumn<Transactions, String> description;
+    @FXML private TableColumn<Transactions, String> types;
 
 
 
+    @Override
     public void initialLoad(){
-        this.loadTransationOnTable(table_transactions, id, dateDeTransaction, categorie, personne, montant, description);
+        this.loadTransationOnTable(table_transactions, id, dateDeTransaction, categorie, personne, montant, description, types);
     }
 
     private void loadTransationOnTable(
@@ -36,7 +38,8 @@ public class RapportsView {
             TableColumn<Transactions, String> categorie,
             TableColumn<Transactions, String> personne,
             TableColumn<Transactions, Double> montant,
-            TableColumn<Transactions, String> description
+            TableColumn<Transactions, String> description,
+            TableColumn<Transactions, String> types
     ){
 
         ObservableList<Transactions> list = null;
@@ -65,6 +68,7 @@ public class RapportsView {
         });
         montant.setCellValueFactory(new PropertyValueFactory<Transactions, Double>("montant"));
         description.setCellValueFactory(new PropertyValueFactory<Transactions, String>("description"));
+        types.setCellValueFactory(new PropertyValueFactory<Transactions, String>("types"));;
         table_transactions.setItems(list);
     }
 
