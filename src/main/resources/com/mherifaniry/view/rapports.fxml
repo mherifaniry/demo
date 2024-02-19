@@ -34,7 +34,7 @@
                                     <Insets left="10.0" />
                                  </padding>
                               </Label>
-                              <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" stylesheets="@css/Styling.css" text="Revenus" textFill="#4d4949">
+                              <Button onAction="#revenusBtn" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0" stylesheets="@css/Styling.css" text="Revenus" textFill="#4d4949">
                                  <styleClass>
                                     <String fx:value="button-menu" />
                                     <String fx:value="button-menu" />

@@ -19,17 +19,24 @@ import java.lang.reflect.InvocationTargetException;
 
 public class HelloApplication extends Application {
     double x, y;
+    private BorderPane borderPane;
+    private FXMLLoader rapportsView;
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader =  PrincipalesView.getContruct();
-        Parent root =  fxmlLoader.load();
-        Scene scene = new Scene(root, 700, 500);
+
+        // initialisation of principal variable
+
+        PrincipalesView.setMiddleBP();
+
+        //initialize scene
+        Scene scene = new Scene(PrincipalesView.getRoot(), 700, 500);
         stage.initStyle(StageStyle.TRANSPARENT);
-        root.setOnMousePressed(evt ->{
+
+        PrincipalesView.getRoot().setOnMousePressed(evt ->{
             x = evt.getSceneX();
             y = evt.getSceneY();
         });
-        root.setOnMouseDragged(evt ->{
+        PrincipalesView.getRoot().setOnMouseDragged(evt ->{
             stage.setX(evt.getScreenX() - x);
             stage.setY(evt.getScreenY() - y);
         });
@@ -39,18 +46,11 @@ public class HelloApplication extends Application {
         stage.setOnShowing(new EventHandler<WindowEvent>() {
             @Override
             public void handle(WindowEvent windowEvent) {
-
-                FXMLLoader rapportsView = new FXMLLoader(RapportsView.class.getResource("rapports.fxml"));
-                BorderPane borderPane = (BorderPane) root.lookup("#middleBP");
                 try {
-                    borderPane.setCenter(rapportsView.load());
-                    RapportsView rapportsView1 = rapportsView.getController();
-                    rapportsView1.initialLoad();
+                    PrincipalesView.initializeRapportsContents(RapportsView.class, "rapports.fxml");
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
-
-
             }
         });
 
@@ -63,4 +63,6 @@ public class HelloApplication extends Application {
     public static void main(String[] args) {
         launch();
     }
+
+
 }

@@ -5,6 +5,7 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -21,6 +22,8 @@ public class RapportsView {
     @FXML private TableColumn<Transactions, String> personne;
     @FXML private TableColumn<Transactions, Double> montant;
     @FXML private TableColumn<Transactions, String> description;
+
+
 
     public void initialLoad(){
         this.loadTransationOnTable(table_transactions, id, dateDeTransaction, categorie, personne, montant, description);
@@ -63,6 +66,10 @@ public class RapportsView {
         montant.setCellValueFactory(new PropertyValueFactory<Transactions, Double>("montant"));
         description.setCellValueFactory(new PropertyValueFactory<Transactions, String>("description"));
         table_transactions.setItems(list);
+    }
+
+    public void revenusBtn(){
+        System.out.println("Working");
     }
 
 }

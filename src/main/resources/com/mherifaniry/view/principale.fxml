@@ -46,7 +46,7 @@
          <left>
             <VBox prefHeight="371.0" prefWidth="138.0" style="-fx-background-color: #703bd6;" BorderPane.alignment="CENTER">
                <children>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="139.0" stylesheets="@css/Styling.css" text="Rapports" textFill="#fffdfd">
+                  <Button fx:id="rapportsBtn" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="139.0" stylesheets="@css/Styling.css" text="Rapports" textFill="#fffdfd">
                      <graphic>
                         <SVGPath content="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5" fill="#f5f4f4" layoutX="18.0" layoutY="18.0" />
                      </graphic>
@@ -54,7 +54,7 @@
                         <Insets left="10.0" />
                      </padding>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="139.0" stylesheets="@css/Styling.css" text="Budgets" textFill="#fffdfd">
+                  <Button fx:id="budgetsBtn" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="139.0" stylesheets="@css/Styling.css" text="Budgets" textFill="#fffdfd">
                      <graphic>
                         <SVGPath content="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5z" fill="#f5f4f4" layoutX="18.0" layoutY="18.0" />
                      </graphic>
@@ -62,7 +62,7 @@
                         <Insets left="10.0" />
                      </padding>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="139.0" stylesheets="@css/Styling.css" text="Transactions" textFill="#fffdfd">
+                  <Button fx:id="transactionsBtn" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="139.0" stylesheets="@css/Styling.css" text="Transactions" textFill="#fffdfd">
                      <graphic>
                         <SVGPath content="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5m-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5" fill="#f5f4f4" layoutX="18.0" layoutY="18.0" />
                      </graphic>
@@ -70,7 +70,7 @@
                         <Insets left="10.0" />
                      </padding>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="52.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="138.0" stylesheets="@css/Styling.css" text="Planning" textFill="#fffdfd">
+                  <Button fx:id="planningBtn" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="52.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="138.0" stylesheets="@css/Styling.css" text="Planning" textFill="#fffdfd">
                      <graphic>
                         <SVGPath content="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" fill="#f5f4f4" layoutX="18.0" layoutY="18.0" />
                      </graphic>
@@ -78,7 +78,7 @@
                         <Insets left="10.0" />
                      </padding>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="94.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="139.0" stylesheets="@css/Styling.css" text="Paramètres" textFill="#fffdfd">
+                  <Button fx:id="paramètresBtn" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="94.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="139.0" stylesheets="@css/Styling.css" text="Paramètres" textFill="#fffdfd">
                      <graphic>
                         <SVGPath content="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0 M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z" fill="#f5f4f4" layoutX="18.0" layoutY="18.0" />
                      </graphic>
